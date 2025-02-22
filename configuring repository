@@ -1,0 +1,20 @@
+Create a playbook repository.yml for configuring repository on all nodes.
+
+ Task1)
+
+ Name = baseos
+ Description = Baseos Description
+ Url = http://ec2-54-162-204-86.compute-1.amazonaws.com/BaseOs/
+ GPG is enabled.
+ Gpgkey = http://ec2-54-162-204-86.compute-1.amazonaws.com/RPM-GPG-KEY-redhat-release
+ Repository is enabled.
+
+
+ Task2)
+
+ Name = appstream
+ Description = App Description
+ Url = http://ec2-54-162-204-86.compute-1.amazonaws.com/AppStream/
+ GPG is enabled.
+ Gpgkey = http://ec2-54-162-204-86.compute-1.amazonaws.com/RPM-GPG-KEY-redhat-release
+ Repository is enabled.
