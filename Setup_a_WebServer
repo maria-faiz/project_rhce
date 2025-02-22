@@ -1,0 +1,26 @@
+Setup a WebServer on webserver group hosts:
+=================
+
+Task1)
+
+  install httpd and firewalld packages
+
+Task2) 
+ 
+  Start | enable httpd and firewalld
+
+
+Task3)
+
+  Add firewall Rule for http    
+
+=========================================================================================
+Hint: 
+
+(if firewalld module missing, you need to install ansible.posix colletion, firewalld module
+  bundled in this collection)
+
+
+# Command to Install Collection
+
+ansible-galaxy collection install ansible.posix
