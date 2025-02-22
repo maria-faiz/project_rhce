@@ -1,0 +1,14 @@
+Create a playbook web_data.yml and it should run on prod group:
+================================================================
+
+ i) Create a directory /devwork and it should be owned by ansi_user group.
+
+ii) /devwork directory should have context type as "httpd"
+
+iii) Assign the permission for user=rwx,group=rwx,others=rx and group special permission
+ should be applied to /devwork.
+
+ iv) Create an index.html file under /devwork directory and the file should have the content
+ "Developement in progress".
+
+ v) Link the /devwork directory to /var/www/html/devwork
