@@ -1,0 +1,11 @@
+Replace the file /etc/issue on all managed nodes:
+
+================================================
+
+ i) In dev group /etc/issue should have the content "Developement".
+
+ ii) In test group /etc/issue should have the content "Test".
+
+ iii) In prod group /etc/issue should have the content "Production".
+
+ iv) Playbook name issue.yml and run in all managed nodes.
