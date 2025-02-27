@@ -1,0 +1,5 @@
+Create a cronjob for user ansi_user in all nodes, the playbook name cronjob.yml and the job details are below:
+
+=============================================================================================================
+
+ i) Every 2 minutes the job will execute command logger "Learning Ansible"
