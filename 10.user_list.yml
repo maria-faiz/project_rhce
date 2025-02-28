@@ -1,0 +1,19 @@
+Download the variable file http://ec2-54-162-204-86.compute-1.amazonaws.com/user_list.yml and
+Playbook name users.yml and run in all nodes using two variable files user_list.yml and
+vault.yml (Hint same vault file which you created in Q8, it has password info)
+
+=============================================================================================
+
+i) * Create a group opsdev
+   * Create user from users variable who's job is equal to developer and make user member of opsdev group
+   * Assign a password using SHA512 format and run the playbook on dev and test.
+  
+    * User password is {{ pw_developer }}
+
+
+ii) * Create a group opsmgr
+    * Create user from users variable who's job is equal to manager and make it member of opsmgr group
+    * Assign a password using SHA512 format and run the playbook on test.
+    * User password is {{ pw_manager }}
+
+iii)* Use when condition for each play.
