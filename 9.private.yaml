@@ -1,0 +1,6 @@
+1) Create a vault file private.yaml by using password "redhat123" and add line pw: password in it
+
+#once it get created then view it.
+
+
+2) now rekey or change the password of private.yaml file
