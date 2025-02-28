@@ -1,0 +1,11 @@
+Create a variable file vault.yml and that file should contains the variable and its value.
+
+==========================================================================================
+
+pw_developer is value lamdev
+pw_manager is value lammgr
+
+
+i) vault.yml file should be encrpted using the password "redhat123".
+ 
+ii) Store the password in secret.txt file and which is used for encrypt the variable file.
