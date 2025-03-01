@@ -1,0 +1,9 @@
+Create a logical volume named data of 1500M size from the volume group research
+and if 1500M size is not created, then atleast it should create 800M size.
+
+
+i) Verify if vg not exist, then it should debug msg "vg not found" .
+ii) 1500Mlv size is not created, then it should debug msg "Insufficient size of vg" .
+iii) If Logical volume is created, then assign file system as "ext3" .
+iv) Do not perform any mounting for this LV.
+iv) The playbook name lvm.yml and run the playbook in all nodes
