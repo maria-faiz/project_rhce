@@ -1,0 +1,18 @@
+Create Volume Group:
+=======================================================
+
+Prep Work: Add 1G disk to all managed nodes and make sure new disk name is same.
+
+
+
+Playbook book Name: vg.yaml
+
+
+Task1: Check If desired disk exists
+
+Task2: Create a 850M partition on it
+
+Separating third task of the Play
+-----------------------
+
+Task3: Create volume group 'research' of 850M on the partition you created in last task.
