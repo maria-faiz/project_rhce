@@ -1,0 +1,6 @@
+Create a playbook name timesync.yml and use system roles
+==========================================================
+
+i) use ntp server and enable iburst
+
+ii) Run this playbook on all nodes
