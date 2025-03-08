@@ -1,0 +1,12 @@
+Download the file http://ec2-54-162-204-86.compute-1.amazonaws.com/hosts.j2
+
+i) hosts.j2 is having the content.
+127.0.0.1 localhost.localdomain localhost
+192.168.0.1 localhost.localdomain localhost
+
+ii) The file should collect all node information like ipaddress,fqdn,hostname
+and it should be the same as in the /etc/hosts file,
+if playbook run in all the managed node it must store in /etc/myhosts.
+Finally /etc/myhosts file should contains like.
+
+iii) playbook name hosts.yml and run in dev group.
