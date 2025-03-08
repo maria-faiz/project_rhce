@@ -1,0 +1,29 @@
+Create a Playbook roles.yml for using the roles
+
+1) The playbook contains the balancer hosts for use balancer role
+
+a) browsing, the balancers host group with url http://serverd.lab.example.com that
+produce the output
+
+"Welcome to servera.lab.example.com, (version 1.0)"
+
+b) Refreshing, the balancers host group with the same url the output should be change
+
+"Welcome to serverc.lab.example.com, (version 1.0)"
+
+2) The playbook contains the webservers host group for using the role phpinfo
+
+a) browsing, the webserver host group name that provides the output
+
+"Welcome to serverc.lab.example.com"
+
+and the output comes with various php contents
+b) For example, the webserver hostgroup http://serverc.lab.example.com That provides
+the output
+
+"Welcome to serverc.lab.example.com"
+and the output comes with various php contents
+
+c) Similarly, the webserver hostgroup http://servera.lab.example.com that provides the
+output
+"current host servera.lab.example.com is on <IP>"
