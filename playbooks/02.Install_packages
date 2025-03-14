@@ -1,0 +1,29 @@
+---
+- name: Install packages on dev and test
+  gather_facts: false
+  hosts: dev, test
+  tasks:
+    - name: Install packages on dev and test
+      dnf:
+        name:
+          - vsftpd
+          - mariadb-server
+        state: present
+
+- name: Install packages on prod
+  gather_facts: false
+  hosts: prod
+  tasks:
+    - name:
+      dnf:
+        name: "@RPM Development Tools"
+        state: present
+
+- name: update packages on dev
+  gather_facts: false
+  hosts: dev
+  tasks:
+    - name:  update packages on dev
+      dnf:
+        name: "*"
+        state: latest
