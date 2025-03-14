@@ -1,0 +1,12 @@
+installing the roles
+
+=======================
+
+
+i) Create a directory 'roles' under /home/student/ansible
+ii) Create a playbook called requirements.yml under the roles directory and download the
+given roles under the 'roles' directory using galaxy command under it.
+
+iii) Role name should be 'balancer' and download using this url https://github.com/zee-tek/zee-tek-ansible-role-zee_balancer/archive/main.tar.gz
+
+iv) Role name 'phpinfo' and download using this url https://github.com/zee-tek/ansible-role-zee_php/archive/main.tar.gz.
