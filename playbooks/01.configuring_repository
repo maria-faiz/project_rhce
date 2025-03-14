@@ -1,0 +1,22 @@
+---
+- name: Set up repos
+  gather_facts: false
+  hosts: all
+  tasks:
+    - name: Set up baseos
+      yum_repository:
+        name: baseos
+        description: Baseos Description
+        baseurl: http://ec2-54-162-204-86.compute-1.amazonaws.com/BaseOs/
+        enabled: yes
+        gpgcheck: yes
+        gpgkey: http://ec2-54-162-204-86.compute-1.amazonaws.com/BaseOs/
+
+    - name: Set up
+      yum_repository:
+        name: appstream
+        description: App Description
+        baseurl: http://ec2-54-162-204-86.compute-1.amazonaws.com/AppStream/
+        enabled: yes
+        gpgcheck: yes
+        gpgkey: http://ec2-54-162-204-86.compute-1.amazonaws.com/BaseOs/
